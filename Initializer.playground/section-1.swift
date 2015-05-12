@@ -145,9 +145,11 @@ enum Temperature {
             case "K":
             self = .Kelvin
             case "C":
-            self = .Celsious
+            self = .Celsius
             case "F":
             self = .Fahrenheit
+        default:
+            return nil
         }
     }
 }
@@ -155,6 +157,98 @@ enum Temperature {
 enum RawTemperature:Character {
     case Kelvin = "K" , Celcious = "C" , Fahrenheit = "F"
 }
+
+let farenheit = RawTemperature(rawValue: "F")
+
+class Product {
+    let name:String!
+    init?(name:String) {
+        self.name = name
+        if name.isEmpty {return nil}
+    }
+}
+
+
+class CartItem: Product {
+    let quantity : Int!
+    
+    init?(name: String, quantity:Int) {
+       self.quantity  = quantity
+        super.init(name: name)
+        if quantity < 1 {return nil}
+    }
+}
+
+
+if let zeroShirt = CartItem(name: "Shirt", quantity: 0) {
+    println("item \(zeroShirt.name) , quantity : \(zeroShirt.quantity)")
+} else {
+    println("unable to initilize zero shirt")
+}
+
+if let oneUnnamed = CartItem(name: "", quantity: 1) {
+    println("item \(oneUnnamed.name) , quantity : \(oneUnnamed.quantity)")
+} else {
+    println("unable to initilize oneUnnamed")
+}
+
+class Document {
+    var name: String?
+    init(){}
+    init?(name:String) {
+        self.name = name
+        if name.isEmpty {return nil}
+    }
+}
+
+class AutomaticallyNamedDocument: Document {
+    override init(){
+        super.init()
+        self.name =  "[Untitled]"
+    }
+    override init(name: String) {
+     super.init()
+        if name.isEmpty {
+            self.name  = "[Untitled]"
+        }else {
+            self.name = name
+        }
+    }
+}
+
+let automacics =  AutomaticallyNamedDocument(name: "")
+println("item \(automacics.name)")
+//Default property value with closure or function 
+
+struct CheckerBoard {
+    let boardColors: [Bool] = {
+       var tempBoard  = [Bool]()
+        var isBlack = false
+        for i in 1...10 {
+            for j in 1...10 {
+                tempBoard.append(isBlack)
+                isBlack = !isBlack
+            }
+            isBlack = !isBlack
+            
+        }
+        return tempBoard
+    }()
+    
+    func squareIsBlackAtRow(row:Int, column:Int) ->Bool {
+        return boardColors[(row*10)+column]
+    }
+
+}
+
+let board = CheckerBoard()
+board.squareIsBlackAtRow(0, column: 1)
+
+
+
+
+
+
 
 
 
