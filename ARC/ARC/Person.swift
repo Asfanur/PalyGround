@@ -10,6 +10,9 @@ import UIKit
 
 class Person {
     let name :String
+    var apartment:Apartment?
+    var aweakApartment:WeakApartment?
+    
     init(name:String){
         self.name = name
         println("\(name) is being initialized")

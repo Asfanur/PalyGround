@@ -15,6 +15,8 @@
 		3A944DA01B0559C900626E5B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A944D9E1B0559C900626E5B /* LaunchScreen.xib */; };
 		3A944DAC1B0559C900626E5B /* ARCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A944DAB1B0559C900626E5B /* ARCTests.swift */; };
 		3A944DB61B055A1100626E5B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A944DB51B055A1100626E5B /* Person.swift */; };
+		3AC478BB1B0965CD009CE311 /* Apartment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC478BA1B0965CD009CE311 /* Apartment.swift */; };
+		3AC478BD1B096C4B009CE311 /* WeakApartment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC478BC1B096C4B009CE311 /* WeakApartment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		3A944DAA1B0559C900626E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A944DAB1B0559C900626E5B /* ARCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCTests.swift; sourceTree = "<group>"; };
 		3A944DB51B055A1100626E5B /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3AC478BA1B0965CD009CE311 /* Apartment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apartment.swift; sourceTree = "<group>"; };
+		3AC478BC1B096C4B009CE311 /* WeakApartment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakApartment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +87,9 @@
 			children = (
 				3A944D921B0559C900626E5B /* AppDelegate.swift */,
 				3A944D971B0559C900626E5B /* ViewController.swift */,
+				3AC478BC1B096C4B009CE311 /* WeakApartment.swift */,
 				3A944DB51B055A1100626E5B /* Person.swift */,
+				3AC478BA1B0965CD009CE311 /* Apartment.swift */,
 				3A944D991B0559C900626E5B /* Main.storyboard */,
 				3A944D9C1B0559C900626E5B /* Images.xcassets */,
 				3A944D9E1B0559C900626E5B /* LaunchScreen.xib */,
@@ -220,7 +226,9 @@
 			files = (
 				3A944D981B0559C900626E5B /* ViewController.swift in Sources */,
 				3A944D961B0559C900626E5B /* ARC.xcdatamodeld in Sources */,
+				3AC478BB1B0965CD009CE311 /* Apartment.swift in Sources */,
 				3A944DB61B055A1100626E5B /* Person.swift in Sources */,
+				3AC478BD1B096C4B009CE311 /* WeakApartment.swift in Sources */,
 				3A944D931B0559C900626E5B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +427,7 @@
 				3A944DB11B0559C900626E5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A944DB21B0559C900626E5B /* Build configuration list for PBXNativeTarget "ARCTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +436,7 @@
 				3A944DB41B0559C900626E5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

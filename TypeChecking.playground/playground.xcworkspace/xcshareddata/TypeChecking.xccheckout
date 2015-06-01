@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>42D94A36-0EBA-4B15-899E-F168BCC04D18</string>
+	<string>86EACAD3-1717-4C2E-8D22-908C7FA05820</string>
 	<key>IDESourceControlProjectName</key>
-	<string>ARC</string>
+	<string>TypeChecking</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0952FA6A9A73A7FF0F08E74F805278A5A9F2D2BD</key>
 		<string>github.com:Asfanur/PalyGround.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ARC/ARC.xcodeproj</string>
+	<string>TypeChecking.playground</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0952FA6A9A73A7FF0F08E74F805278A5A9F2D2BD</key>
-		<string>../../..</string>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:Asfanur/PalyGround.git</string>
